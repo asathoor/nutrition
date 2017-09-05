@@ -7,20 +7,15 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Kalorietabel</title>
-
-<style>
-
-td, th {
-	border: 1px solid silver;
-	padding: 0.2em;
-}
-
-</style>
-
-
+	<head>
+		<meta charset="UTF-8">
+		<title>Kalorietabel</title>
+		<style>
+			td, th {
+				border: 1px solid silver;
+				padding: 0.2em;
+			}
+	</style>
 </head>
 <table>
 
