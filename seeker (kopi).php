@@ -26,7 +26,7 @@ td, th {
 
 <?php
 // search word
-$findme   = 'kylling';
+$findme   = 'aGURK';
 
 // open csv
 $tabel = "kalorietabel.csv";
@@ -41,28 +41,38 @@ for ($n = 0; $n < 10; $n++){
 	. "</th>";
 }
 
+
 // search and loop out
 while(! feof($file) )
 	{
 		$linje = fgetcsv($file);
 		$mystring = $linje[0];
 
-		// Seeking in the string
+		// SEEKING
 		$pos = stripos($mystring, $findme);
 
 		if ($pos !== false){
 			echo "<tr>\n";		
+		}
 	
 			for ($i = 0; $i < 10; $i++){
+		
+
+				if ($pos !== false) {
 					
 					echo "<td>" 
 					. $linje[ $i ];
 					echo "</td>\n";
 
-				}
+				} else {
+						 //echo "Not found"
+				} // else
 			} // for
 
+		if ($pos !== false){
 			echo "</tr>\n";
+		}
+
 
 	} // while
 
