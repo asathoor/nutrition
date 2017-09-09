@@ -4,7 +4,7 @@
  * purpose: research
  * date: 20170906
  **/
-$title = "Track Calories"; // used by header.php
+$title = "Gauge: Track Calories"; // used by header.php
 $file = fopen("madDagbog.csv","r");
 $kcal = 0;
 $ration = 1980; // 2000 - 10%.
