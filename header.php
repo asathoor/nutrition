@@ -16,6 +16,10 @@
 				margin-top: 2em;
 				margin-bottom: 2em;			
 			}
+			label {
+				width: 7em;
+				display: inline-block;
+			}
 	</style>
 
 	</head>

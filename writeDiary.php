@@ -27,7 +27,7 @@ include_once "header.php";
 /**
  * Write to the file
  **/
-$filename = "data.csv";
+$filename = "madDagbog.csv";
 $mode = "a+";
  
 if (isset($_GET['submit']) ){
