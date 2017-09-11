@@ -1,2 +1,2 @@
 2017-09-11,food,amount,calories
-2017-09-13,vvv,23,23
+2017-09-11,food,amount,calories

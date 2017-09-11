@@ -33,7 +33,19 @@ If you run save data about it.
 
 ## Advanced: Data visualization
 
-* [Google Charts](https://developers.google.com/chart/)
+You can visualize your data in many ways, e.g. by google charts. In general they are made by JavaScript. However, you can add values via PHP.
 
-Exercise: select a chart. Then import data from your csv. 
-Via PHP print JavaScript for a Google Chart.
+* [Google Charts](https://developers.google.com/chart/interactive/docs/gallery)
+* [CanvasJS Charts](https://canvasjs.com/html5-javascript-pie-chart/)
+
+Here is a small sample from the file dagbog-chart.php where PHP variables are inserted:
+
+~~~~
+function drawBarColors() {
+      var data = google.visualization.arrayToDataTable([
+        ['Today', 'Max Energy', 'Energy Used'],
+        [ 'Today', <?php echo $ration; ?>, <?php echo $kcal; ?>],
+      ]);
+~~~~
+
+
