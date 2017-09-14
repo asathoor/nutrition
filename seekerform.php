@@ -85,6 +85,8 @@
 	if( isset($_GET['submit'])  ) {
 		finder( $_GET['what'] );
 	}
+	
+	include_once "sidebar.php";
 	?>
 
 </body>

@@ -13,10 +13,10 @@ include_once "header.php";
 <form action="#" method="get" enctype="multipart/form-data">
 	<fieldset>
 		<legend>What did you eat?</legend>
-		<label> Date </label> <input type="date" name="date"><br>
-		<label> Food </label> <input type="text" name="food"><br>	
-		<label> Gram / dl </label> <input type="text" name="amount"><br>
-		<label> Calories </label> <input type="text" name="calories"><br>
+		<label> Date </label> <input type="date" name="date" required><br>
+		<label> Food </label> <input type="text" name="food" required><br>	
+		<label> Gram / dl </label> <input type="number" name="amount" required><br>
+		<label> Calories </label> <input type="number" name="calories" required><br>
 		<button name="submit" value="save" type="submit">Save</button>
 		<button name="Cancel" value="cancel" type="reset">Cancel</button>			
 	</fieldset>
